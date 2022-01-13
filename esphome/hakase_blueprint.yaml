@@ -1,0 +1,444 @@
+blueprint:
+  name: Hakase keypad
+  description: |
+    # Hakase keypad
+    ## Designed by Exentio
+
+    This is the blueprint necessary to configure and use Hakase with Home Assistant.
+    By default, the possible events are `tap`, `hold`, `double tap`, `double hold`,
+    and `release`; feel free to change the code to add more, without forgetting
+    about this blueprint!  
+
+    Firmware repo: https://github.com/exentio/qmk_configs/tree/main/hakase
+
+  domain: automation
+
+  input:
+    hakase_entity:
+      name: 'Hakase entity'
+      description: 'The entity that exposes Hakase presses'
+      default: sensor.hakase_action
+      selector:
+        entity:
+          domain: sensor
+
+    # Input boxes
+    action_key_1_tap:
+      name: Key 1 tap
+      description: Action to run on key 1 short press.
+      default: []
+      selector:
+        action:
+
+    action_key_1_hold:
+      name: Key 1 hold
+      description: Action to run on key 1 long press.
+      default: []
+      selector:
+        action:
+
+    action_key_1_double:
+      name: Key 1 double press
+      description: Action to run on key 1 double press.
+      default: []
+      selector:
+        action:
+
+    action_key_1_double_hold:
+      name: Key 1 double press and hold
+      description: Action to run on key 1 double press ending in hold.
+      default: []
+      selector:
+        action:
+
+    action_key_1_release:
+      name: Key 1 release
+      description: Action to run on key 1 is released.
+      default: []
+      selector:
+        action:
+
+    action_key_2_tap:
+      name: Key 2 tap
+      description: Action to run on key 2 short press.
+      default: []
+      selector:
+        action:
+
+    action_key_2_hold:
+      name: Key 2 hold
+      description: Action to run on key 2 long press.
+      default: []
+      selector:
+        action:
+
+    action_key_2_double:
+      name: Key 2 double press
+      description: Action to run on key 2 double press.
+      default: []
+      selector:
+        action:
+
+    action_key_2_double_hold:
+      name: Key 2 double press and hold
+      description: Action to run on key 2 double press ending in hold.
+      default: []
+      selector:
+        action:
+
+    action_key_2_release:
+      name: Key 2 release
+      description: Action to run on key 2 is released.
+      default: []
+      selector:
+        action:
+
+    action_key_3_tap:
+      name: Key 3 tap
+      description: Action to run on key 3 short press.
+      default: []
+      selector:
+        action:
+
+    action_key_3_hold:
+      name: Key 3 hold
+      description: Action to run on key 3 long press.
+      default: []
+      selector:
+        action:
+
+    action_key_3_double:
+      name: Key 3 double press
+      description: Action to run on key 3 double press.
+      default: []
+      selector:
+        action:
+
+    action_key_3_double_hold:
+      name: Key 3 double press and hold
+      description: Action to run on key 3 double press ending in hold.
+      default: []
+      selector:
+        action:
+
+    action_key_3_release:
+      name: Key 3 release
+      description: Action to run on key 3 is released.
+      default: []
+      selector:
+        action:
+
+    action_key_4_tap:
+      name: Key 4 tap
+      description: Action to run on key 4 short press.
+      default: []
+      selector:
+        action:
+
+    action_key_4_hold:
+      name: Key 4 hold
+      description: Action to run on key 4 long press.
+      default: []
+      selector:
+        action:
+
+    action_key_4_double:
+      name: Key 4 double press
+      description: Action to run on key 4 double press.
+      default: []
+      selector:
+        action:
+
+    action_key_4_double_hold:
+      name: Key 4 double press and hold
+      description: Action to run on key 4 double press ending in hold.
+      default: []
+      selector:
+        action:
+
+    action_key_4_release:
+      name: Key 4 release
+      description: Action to run on key 4 is released.
+      default: []
+      selector:
+        action:
+
+    action_key_5_tap:
+      name: Key 5 tap
+      description: Action to run on key 5 short press.
+      default: []
+      selector:
+        action:
+
+    action_key_5_hold:
+      name: Key 5 hold
+      description: Action to run on key 5 long press.
+      default: []
+      selector:
+        action:
+
+    action_key_5_double:
+      name: Key 5 double press
+      description: Action to run on key 5 double press.
+      default: []
+      selector:
+        action:
+
+    action_key_5_double_hold:
+      name: Key 5 double press and hold
+      description: Action to run on key 5 double press ending in hold.
+      default: []
+      selector:
+        action:
+
+    action_key_5_release:
+      name: Key 5 release
+      description: Action to run on key 5 is released.
+      default: []
+      selector:
+        action:
+
+    action_key_6_tap:
+      name: Key 6 tap
+      description: Action to run on key 6 short press.
+      default: []
+      selector:
+        action:
+
+    action_key_6_hold:
+      name: Key 6 hold
+      description: Action to run on key 6 long press.
+      default: []
+      selector:
+        action:
+
+    action_key_6_double:
+      name: Key 6 double press
+      description: Action to run on key 6 double press.
+      default: []
+      selector:
+        action:
+
+    action_key_6_double_hold:
+      name: Key 6 double press and hold
+      description: Action to run on key 6 double press ending in hold.
+      default: []
+      selector:
+        action:
+
+    action_key_6_release:
+      name: Key 6 release
+      description: Action to run on key 6 is released.
+      default: []
+      selector:
+        action:
+
+    action_key_7_tap:
+      name: Key 7 tap
+      description: Action to run on key 7 short press.
+      default: []
+      selector:
+        action:
+
+    action_key_7_hold:
+      name: Key 7 hold
+      description: Action to run on key 7 long press.
+      default: []
+      selector:
+        action:
+
+    action_key_7_double:
+      name: Key 7 double press
+      description: Action to run on key 7 double press.
+      default: []
+      selector:
+        action:
+
+    action_key_7_double_hold:
+      name: Key 7 double press and hold
+      description: Action to run on key 7 double press ending in hold.
+      default: []
+      selector:
+        action:
+
+    action_key_7_release:
+      name: Key 7 release
+      description: Action to run on key 7 is released.
+      default: []
+      selector:
+        action:
+
+    action_key_8_tap:
+      name: Key 8 tap
+      description: Action to run on key 8 short press.
+      default: []
+      selector:
+        action:
+
+    action_key_8_hold:
+      name: Key 8 hold
+      description: Action to run on key 8 long press.
+      default: []
+      selector:
+        action:
+
+    action_key_8_double:
+      name: Key 8 double press
+      description: Action to run on key 8 double press.
+      default: []
+      selector:
+        action:
+
+    action_key_8_double_hold:
+      name: Key 8 double press and hold
+      description: Action to run on key 8 double press ending in hold.
+      default: []
+      selector:
+        action:
+
+    action_key_8_release:
+      name: Key 8 release
+      description: Action to run on key 8 is released.
+      default: []
+      selector:
+        action:
+
+# Action codes
+variables:
+  code_key_1_tap: '00T'
+  code_key_1_hold: '00H'
+  code_key_1_double: '00D'
+  code_key_1_double_hold: '00B'
+  code_key_1_release: '00R'
+  code_key_2_tap: '01T'
+  code_key_2_hold: '01H'
+  code_key_2_double: '01D'
+  code_key_2_double_hold: '01B'
+  code_key_2_release: '01R'
+  code_key_3_tap: '02T'
+  code_key_3_hold: '02H'
+  code_key_3_double: '02D'
+  code_key_3_double_hold: '02B'
+  code_key_3_release: '02R'
+  code_key_4_tap: '03T'
+  code_key_4_hold: '03H'
+  code_key_4_double: '03D'
+  code_key_4_double_hold: '03B'
+  code_key_4_release: '03R'
+  code_key_5_tap: '04T'
+  code_key_5_hold: '04H'
+  code_key_5_double: '04D'
+  code_key_5_double_hold: '04B'
+  code_key_5_release: '04R'
+  code_key_6_tap: '05T'
+  code_key_6_hold: '05H'
+  code_key_6_double: '05D'
+  code_key_6_double_hold: '05B'
+  code_key_6_release: '05R'
+  code_key_7_tap: '06T'
+  code_key_7_hold: '06H'
+  code_key_7_double: '06D'
+  code_key_7_double_hold: '06B'
+  code_key_7_release: '06R'
+  code_key_8_tap: '07T'
+  code_key_8_hold: '07H'
+  code_key_8_double: '07D'
+  code_key_8_double_hold: '07B'
+  code_key_8_release: '07R'
+
+# Automation mode - see https://www.home-assistant.io/docs/automation/modes
+mode: queued
+max_exceeded: silent
+
+trigger:
+# trigger for zigbee2mqtt
+- platform: event
+  event_type: state_changed
+  event_data:
+    entity_id: !input hakase_entity
+
+action:
+  - variables:
+      trigger_action: '{{ trigger.event.data.new_state.state }}'
+
+  - choose:
+    - conditions: '{{ trigger_action | string in code_key_1_tap }}'
+      sequence: !input action_key_1_tap
+    - conditions: '{{ trigger_action | string in code_key_1_hold }}'
+      sequence: !input action_key_1_hold
+    - conditions: '{{ trigger_action | string in code_key_1_double }}'
+      sequence: !input action_key_1_double
+    - conditions: '{{ trigger_action | string in code_key_1_double_hold }}'
+      sequence: !input action_key_1_double_hold
+    - conditions: '{{ trigger_action | string in code_key_1_release }}'
+      sequence: !input action_key_1_release
+    - conditions: '{{ trigger_action | string in code_key_2_tap }}'
+      sequence: !input action_key_2_tap
+    - conditions: '{{ trigger_action | string in code_key_2_hold }}'
+      sequence: !input action_key_2_hold
+    - conditions: '{{ trigger_action | string in code_key_2_double }}'
+      sequence: !input action_key_2_double
+    - conditions: '{{ trigger_action | string in code_key_2_double_hold }}'
+      sequence: !input action_key_2_double_hold
+    - conditions: '{{ trigger_action | string in code_key_2_release }}'
+      sequence: !input action_key_2_release
+    - conditions: '{{ trigger_action | string in code_key_3_tap }}'
+      sequence: !input action_key_3_tap
+    - conditions: '{{ trigger_action | string in code_key_3_hold }}'
+      sequence: !input action_key_3_hold
+    - conditions: '{{ trigger_action | string in code_key_3_double }}'
+      sequence: !input action_key_3_double
+    - conditions: '{{ trigger_action | string in code_key_3_double_hold }}'
+      sequence: !input action_key_3_double_hold
+    - conditions: '{{ trigger_action | string in code_key_3_release }}'
+      sequence: !input action_key_3_release
+    - conditions: '{{ trigger_action | string in code_key_4_tap }}'
+      sequence: !input action_key_4_tap
+    - conditions: '{{ trigger_action | string in code_key_4_hold }}'
+      sequence: !input action_key_4_hold
+    - conditions: '{{ trigger_action | string in code_key_4_double }}'
+      sequence: !input action_key_4_double
+    - conditions: '{{ trigger_action | string in code_key_4_double_hold }}'
+      sequence: !input action_key_4_double_hold
+    - conditions: '{{ trigger_action | string in code_key_4_release }}'
+      sequence: !input action_key_4_release
+    - conditions: '{{ trigger_action | string in code_key_5_tap }}'
+      sequence: !input action_key_5_tap
+    - conditions: '{{ trigger_action | string in code_key_5_hold }}'
+      sequence: !input action_key_5_hold
+    - conditions: '{{ trigger_action | string in code_key_5_double }}'
+      sequence: !input action_key_5_double
+    - conditions: '{{ trigger_action | string in code_key_5_double_hold }}'
+      sequence: !input action_key_5_double_hold
+    - conditions: '{{ trigger_action | string in code_key_5_release }}'
+      sequence: !input action_key_5_release
+    - conditions: '{{ trigger_action | string in code_key_6_tap }}'
+      sequence: !input action_key_6_tap
+    - conditions: '{{ trigger_action | string in code_key_6_hold }}'
+      sequence: !input action_key_6_hold
+    - conditions: '{{ trigger_action | string in code_key_6_double }}'
+      sequence: !input action_key_6_double
+    - conditions: '{{ trigger_action | string in code_key_6_double_hold }}'
+      sequence: !input action_key_6_double_hold
+    - conditions: '{{ trigger_action | string in code_key_6_release }}'
+      sequence: !input action_key_6_release
+    - conditions: '{{ trigger_action | string in code_key_7_tap }}'
+      sequence: !input action_key_7_tap
+    - conditions: '{{ trigger_action | string in code_key_7_hold }}'
+      sequence: !input action_key_7_hold
+    - conditions: '{{ trigger_action | string in code_key_7_double }}'
+      sequence: !input action_key_7_double
+    - conditions: '{{ trigger_action | string in code_key_7_double_hold }}'
+      sequence: !input action_key_7_double_hold
+    - conditions: '{{ trigger_action | string in code_key_7_release }}'
+      sequence: !input action_key_7_release
+    - conditions: '{{ trigger_action | string in code_key_8_tap }}'
+      sequence: !input action_key_8_tap
+    - conditions: '{{ trigger_action | string in code_key_8_hold }}'
+      sequence: !input action_key_8_hold
+    - conditions: '{{ trigger_action | string in code_key_8_double }}'
+      sequence: !input action_key_8_double
+    - conditions: '{{ trigger_action | string in code_key_8_double_hold }}'
+      sequence: !input action_key_8_double_hold
+    - conditions: '{{ trigger_action | string in code_key_8_release }}'
+      sequence: !input action_key_8_release

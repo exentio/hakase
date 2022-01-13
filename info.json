@@ -1,0 +1,59 @@
+{
+    "keyboard_name": "Hakase",
+    "keyboard": "Hakase",
+    "url": "https://github.com/exentio",
+    "maintainer": "Exentio",
+    "width": 4,
+    "height": 2,
+    "keymap": "default",
+    "layouts": {
+        "LAYOUT_horizontal": {
+            "layout": [
+                {
+                    "x": 0,
+                    "y": 0
+                },
+                {
+                    "x": 1,
+                    "y": 0
+                },
+                {
+                    "x": 2,
+                    "y": 0
+                },
+                {
+                    "x": 3,
+                    "y": 0
+                },
+                {
+                    "x": 0,
+                    "y": 1
+                },
+                {
+                    "x": 1,
+                    "y": 1
+                },
+                {
+                    "x": 2,
+                    "y": 1
+                },
+                {
+                    "x": 3,
+                    "y": 0
+                }
+            ]
+        }
+    },
+    "layers": [
+        [
+            "KC_1",
+            "KC_2",
+            "KC_3",
+            "KC_4",
+            "KC_5",
+            "KC_6",
+            "KC_7",
+            "KC_8"
+        ]
+    ]
+}
