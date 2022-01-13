@@ -9,7 +9,7 @@ blueprint:
     and `release`; feel free to change the code to add more, without forgetting
     about this blueprint!  
 
-    Firmware repo: https://github.com/exentio/qmk_configs/tree/main/hakase
+    Github repo: https://github.com/exentio/hakase
 
   domain: automation
 
