@@ -1,13 +1,19 @@
 {
+    "manufacturer": "Exentio",
     "keyboard_name": "Hakase",
     "keyboard": "Hakase",
     "url": "https://github.com/exentio",
+    "usb": {
+        "device_version": "0.0.1",
+        "vid": "0xC01D",
+        "pid": "0xB00B"
+    },
     "maintainer": "Exentio",
     "width": 4,
     "height": 2,
     "keymap": "default",
     "layouts": {
-        "LAYOUT_horizontal": {
+        "LAYOUT": {
             "layout": [
                 {
                     "x": 0,

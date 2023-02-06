@@ -17,13 +17,6 @@
 
 #include "config_common.h"
 
-#define VENDOR_ID 0xC01D
-#define PRODUCT_ID 0xB00B
-#define DEVICE_VER 0x0001
-
-#define MANUFACTURER Exentio
-#define PRODUCT Hakase
-
 #define MATRIX_ROWS 2
 #define MATRIX_COLS 4
 #define DIODE_DIRECTION ROW2COL

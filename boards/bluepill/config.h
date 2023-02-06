@@ -19,4 +19,3 @@
     { B11, B10, B1, B0 }
 #define MATRIX_ROW_PINS \
     { B12, B13 }
-#define UNUSED_PINS

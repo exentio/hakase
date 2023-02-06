@@ -1,6 +1,6 @@
 # MCU name
 MCU = STM32F103
-BOOTLOADER = stm32duino_ld
+BOOTLOADER = stm32duino
 
 EXTRAFLAGS += -flto
 

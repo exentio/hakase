@@ -19,7 +19,6 @@
     { B11, B10, B1, B0 }
 #define MATRIX_ROW_PINS \
     { B12, B13 }
-#define UNUSED_PINS
 
 // What a fake STM32 with 32K of flash does to a mf
 #define NO_ACTION_ONESHOT
