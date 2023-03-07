@@ -23,7 +23,7 @@ static td_tap_t tap_state = {
     .state = TD_NONE
 };
 
-td_state_t curr_dance(qk_tap_dance_state_t *state) {
+td_state_t curr_dance(tap_dance_state_t *state) {
     switch (state->count) {
         case 1:
             if (state->interrupted || !state->pressed) return TD_SINGLE_TAP;
@@ -89,79 +89,79 @@ void dance_release(int curr_uart_kc) {
         uart_transmit(uart_data_code(curr_uart_kc, TD_RELEASE), UART_MSGLEN);
 }
 
-void ukc0_press(qk_tap_dance_state_t *state, void *user_data) {
+void ukc0_press(tap_dance_state_t *state, void *user_data) {
     tap_state.state = curr_dance(state);
     dance_reg_switching(UKC_0);
 }
 
-void ukc1_press(qk_tap_dance_state_t *state, void *user_data) {
+void ukc1_press(tap_dance_state_t *state, void *user_data) {
     tap_state.state = curr_dance(state);
     dance_reg_switching(UKC_1);
 }
 
-void ukc2_press(qk_tap_dance_state_t *state, void *user_data) {
+void ukc2_press(tap_dance_state_t *state, void *user_data) {
     tap_state.state = curr_dance(state);
     dance_reg_switching(UKC_2);
 }
 
-void ukc3_press(qk_tap_dance_state_t *state, void *user_data) {
+void ukc3_press(tap_dance_state_t *state, void *user_data) {
     tap_state.state = curr_dance(state);
     dance_reg_switching(UKC_3);
 }
 
-void ukc4_press(qk_tap_dance_state_t *state, void *user_data) {
+void ukc4_press(tap_dance_state_t *state, void *user_data) {
     tap_state.state = curr_dance(state);
     dance_reg_switching(UKC_4);
 }
 
-void ukc5_press(qk_tap_dance_state_t *state, void *user_data) {
+void ukc5_press(tap_dance_state_t *state, void *user_data) {
     tap_state.state = curr_dance(state);
     dance_reg_switching(UKC_5);
 }
 
-void ukc6_press(qk_tap_dance_state_t *state, void *user_data) {
+void ukc6_press(tap_dance_state_t *state, void *user_data) {
     tap_state.state = curr_dance(state);
     dance_reg_switching(UKC_6);
 }
 
-void ukc7_press(qk_tap_dance_state_t *state, void *user_data) {
+void ukc7_press(tap_dance_state_t *state, void *user_data) {
     tap_state.state = curr_dance(state);
     dance_reg_switching(UKC_7);
 }
 
-void ukc0_release(qk_tap_dance_state_t *state, void *user_data) {
+void ukc0_release(tap_dance_state_t *state, void *user_data) {
     dance_release(UKC_0);
 }
 
-void ukc1_release(qk_tap_dance_state_t *state, void *user_data) {
+void ukc1_release(tap_dance_state_t *state, void *user_data) {
     dance_release(UKC_1);
 }
 
-void ukc2_release(qk_tap_dance_state_t *state, void *user_data) {
+void ukc2_release(tap_dance_state_t *state, void *user_data) {
     dance_release(UKC_2);
 }
 
-void ukc3_release(qk_tap_dance_state_t *state, void *user_data) {
+void ukc3_release(tap_dance_state_t *state, void *user_data) {
     dance_release(UKC_3);
 }
 
-void ukc4_release(qk_tap_dance_state_t *state, void *user_data) {
+void ukc4_release(tap_dance_state_t *state, void *user_data) {
     dance_release(UKC_4);
 }
 
-void ukc5_release(qk_tap_dance_state_t *state, void *user_data) {
+void ukc5_release(tap_dance_state_t *state, void *user_data) {
     dance_release(UKC_5);
 }
 
-void ukc6_release(qk_tap_dance_state_t *state, void *user_data) {
+void ukc6_release(tap_dance_state_t *state, void *user_data) {
     dance_release(UKC_6);
 }
 
-void ukc7_release(qk_tap_dance_state_t *state, void *user_data) {
+void ukc7_release(tap_dance_state_t *state, void *user_data) {
     dance_release(UKC_7);
 }
 
-qk_tap_dance_action_t tap_dance_actions[] = {
+tap_dance_action_t tap_dance_actions[] = {
     [UKC_0] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, ukc0_press, ukc0_release),
     [UKC_1] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, ukc1_press, ukc1_release),
     [UKC_2] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, ukc2_press, ukc2_release),
